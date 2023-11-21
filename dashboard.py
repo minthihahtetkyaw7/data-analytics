@@ -38,7 +38,7 @@ col1, col2 = st.columns(2)
 with col1:
     plt.figure(figsize=(10, 6))
     gender_counts = df['gender'].map({1: 'Female', 2: 'Male'})
-    st.subheader('Cardiovascular Disease Presence by Gender')
+    st.subheader('Cardiovascular Disease by Gender')
     sns.countplot(x='cardio', hue=gender_counts, data=df)
     st.pyplot()
 
